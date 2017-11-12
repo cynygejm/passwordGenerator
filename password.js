@@ -1,4 +1,4 @@
-createElements();
+/*createElements();
 function createElements(){
 var elementsList= document.getElementById('passwordsFactory')
 var mainElement = document.createElement('div');
@@ -41,16 +41,16 @@ var br=document.createElement('br');
 
     var yes=document.createElement('input');
     yes.setAttribute('radio', 'yes');
-    yes.setAttribute('id', 'yes');
+    yes.setAttribute('id', 'yesInput');
     mainElement.appendChild(yes);
 
     var no=document.createElement('input');
-    no.setAttribute('radio', 'noInput');
-    yes.setAttribute('id', 'yesInput');
+    no.setAttribute('radio', 'checked');
+    no.setAttribute('id', 'noInput');
     mainElement.appendChild(no);
     var br=document.createElement('br');
      mainElement.appendChild(br);
-     
+
     var goButton=document.createElement('button');
     goButton.innerHTML="GO!";
     goButton.setAttribute('id', 'goButton');
@@ -63,4 +63,4 @@ var br=document.createElement('br');
      mainElement.appendChild(done);
 
      elementsList.appendChild(mainElement);
-   }
+   }*/
