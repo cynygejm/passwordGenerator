@@ -64,17 +64,17 @@ var br=document.createElement('br');
 
      elementsList.appendChild(mainElement);
    }*/
-   var passLength = document.querySelector('#length');
+   var passLength = document.querySelector('#length2');
 var okButton = document.querySelector('#ok');
 okButton.addEventListener('click', function getLength(){
-  var number=document.querySelector('#length').value;
+  var number=document.querySelector('#length2').value;
   if (number<6) {
-    alert ("Nie za mało znaków?");
+    alert ("Not enough characters");
   }
   else if (number>15) {
-    alert ("Nie za duzo znaków?");
+    alert ("Too many characters");
   }
-  else { console.log(number);}
+  else { length2.innerHTML=number;}
 } )
 
 var yesSpecial = document.querySelector('#yes');
