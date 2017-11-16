@@ -64,3 +64,53 @@ var br=document.createElement('br');
 
      elementsList.appendChild(mainElement);
    }*/
+   var passLength = document.querySelector('#length');
+var okButton = document.querySelector('#ok');
+okButton.addEventListener('click', function getLength(){
+  var number=document.querySelector('#length').value;
+  if (number<6) {
+    alert ("Nie za mało znaków?");
+  }
+  else if (number>15) {
+    alert ("Nie za duzo znaków?");
+  }
+  else { console.log(number);}
+} )
+
+var yesSpecial = document.querySelector('#yes');
+var noSpecial = document.querySelector('#no');
+
+//  połącz długość hasła z losowaniem wybranych znaków
+yesSpecial.addEventListener('click', function checkLength () {
+
+
+})
+//  tu losowanie wybranej długości hasła
+noSpecial.addEventListener('click', )
+
+yesSpecial.addEventListener('click', function randomSpecial() {
+var special = querySelector('#yes').value;
+if (special) {
+  console.log("1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM`!@#$%^&*()_+=-");  // ????????
+}
+else { } // ????????????????
+})
+
+noSpecial.addEventListener('click', function randomOrdinary () {
+var ordinary = document.querySelector('#no').value;
+if (ordinary) {
+  console.console.log("1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM");
+}
+})
+
+var goButton = document.querySelector('#go');
+goButton.addEventListener('click', function randomPassword (){
+var randomPass= document.querySelector('#   '); // co ma tu złapać?????
+
+})
+
+var readyPass = document.querySelector('#output');
+readyPass.addEventListener('   ', function writePass() {
+write.innerHTML= randomPass;
+})
+  // wypisz gotowe hasło
