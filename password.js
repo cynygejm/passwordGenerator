@@ -64,21 +64,21 @@ var br=document.createElement('br');
 
      elementsList.appendChild(mainElement);
    }*/
-   var passLength = document.querySelector('#length2');
-var okButton = document.querySelector('#ok');
+const passLength = document.querySelector('#length2');
+const okButton = document.querySelector('#ok');
 okButton.addEventListener('click', function getLength(){
-  var number=document.querySelector('#length2').value;
+  let number=document.querySelector('#length2').value;
   if (number<6) {
     alert ("Not enough characters");
   }
   else if (number>15) {
     alert ("Too many characters");
   }
-  else { length2.innerHTML=number;}
+  else { write.innerHTML=number;}
 } )
 
-var yesSpecial = document.querySelector('#yes');
-var noSpecial = document.querySelector('#no');
+const yesSpecial = document.querySelector('#yes');
+const noSpecial = document.querySelector('#no');
 
 //  połącz długość hasła z losowaniem wybranych znaków
 yesSpecial.addEventListener('click', function checkLength () {
@@ -89,7 +89,7 @@ yesSpecial.addEventListener('click', function checkLength () {
 noSpecial.addEventListener('click', )
 
 yesSpecial.addEventListener('click', function randomSpecial() {
-var special = querySelector('#yes').value;
+const special = querySelector('#yes').value;
 if (special) {
   console.log("1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM`!@#$%^&*()_+=-");  // ????????
 }
@@ -97,19 +97,19 @@ else { } // ????????????????
 })
 
 noSpecial.addEventListener('click', function randomOrdinary () {
-var ordinary = document.querySelector('#no').value;
+const ordinary = document.querySelector('#no').value;
 if (ordinary) {
   console.console.log("1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM");
 }
 })
 
-var goButton = document.querySelector('#go');
+const goButton = document.querySelector('#go');
 goButton.addEventListener('click', function randomPassword (){
-var randomPass= document.querySelector('#   '); // co ma tu złapać?????
+const randomPass= document.querySelector('#   '); // co ma tu złapać?????
 
 })
 
-var readyPass = document.querySelector('#output');
+const readyPass = document.querySelector('#output');
 readyPass.addEventListener('   ', function writePass() {
 write.innerHTML= randomPass;
 })
