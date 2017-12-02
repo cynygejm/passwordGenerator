@@ -4,27 +4,24 @@
 <meta charset="utf-8" />
 <title>Password generator</title>
     <link rel="stylesheet" href="password.css">
-
-
 </head>
-    <body>
 
-
+<body>
 <div id="passwordsFactory">
         <h1 id="header" name='logo'>Password generator</h1>
 
-  <form>
-          <label for="length2" id='length1'>Give me password length (min 6 characters max 15) </label>
-        <input type="text" id="length2"/>
+<form>
+          <label for="user_input" id="user_input">Give me password length (min 6 characters max 15) </label>
+        <input type="text" id="user_input"/>
             <button id="ok" >OK</button> <br/>
           <label for="special" id="special">  Do you want special signs too?</label>
-        <input type="radio" name="Q" id="yes" value="yes" />YES
-        <input type="radio" name="Q" id="no" value="no" />NO <br/>
+        <input type="checkbox" name="Q" id="yes" value="yes" />YES
+        <br/>
 
             <button id="go" name="go">GO!</button>
             <br/> <br/>
             <input type="text" id="output" />
-  </form>
+</form>
 </div
 <script src="./password.js"></script>
     </body>

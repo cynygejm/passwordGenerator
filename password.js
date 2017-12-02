@@ -40,16 +40,9 @@ var br=document.createElement('br');
     mainElement.appendChild(br);
 
     var yes=document.createElement('input');
-    yes.setAttribute('radio', 'yes');
+    yes.setAttribute('checkbox', 'yes');
     yes.setAttribute('id', 'yesInput');
     mainElement.appendChild(yes);
-
-    var no=document.createElement('input');
-    no.setAttribute('radio', 'checked');
-    no.setAttribute('id', 'noInput');
-    mainElement.appendChild(no);
-    var br=document.createElement('br');
-     mainElement.appendChild(br);
 
     var goButton=document.createElement('button');
     goButton.innerHTML="GO!";
@@ -63,22 +56,29 @@ var br=document.createElement('br');
      mainElement.appendChild(done);
 
      elementsList.appendChild(mainElement);
-   }*/
-const passLength = document.querySelector('#length2');
+   }
+utknęłam na tym, za trudne 15.11.17
+   */
+   getLength();
+const passLength = document.querySelector('#user_input');
 const okButton = document.querySelector('#ok');
 okButton.addEventListener('click', function getLength(){
-  let number=document.querySelector('#length2').value;
-  if (number<6) {
-    alert ("Not enough characters");
+  let number=user_input.value;
+  if (isNAN(number) || number==="") {
+    alert ("Please enter number");
+  }
+  else if(number<6){
+    alert ("Too few characters");
   }
   else if (number>15) {
     alert ("Too many characters");
   }
-  else { write.innerHTML=number;}
+  else {
+     write.innerHTML=number;
+   }
 } )
 
 const yesSpecial = document.querySelector('#yes');
-const noSpecial = document.querySelector('#no');
 
 //  połącz długość hasła z losowaniem wybranych znaków
 yesSpecial.addEventListener('click', function checkLength () {
