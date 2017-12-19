@@ -99,7 +99,7 @@ else { } // ????????????????
 noSpecial.addEventListener('click', function randomOrdinary () {
 const ordinary = document.querySelector('#no').value;
 if (ordinary) {
-  console.console.log("1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM");
+  console.log("1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM");
 }
 })
 
